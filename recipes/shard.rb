@@ -42,4 +42,5 @@ mongodb_instance "shard" do
     replicaset    node
   end
   enable_rest node['mongodb']['enable_rest']
+  additional_mongod_options  node['mongodb']['additional_mongod_options']
 end

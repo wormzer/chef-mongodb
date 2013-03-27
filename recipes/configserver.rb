@@ -35,4 +35,5 @@ mongodb_instance "configserver" do
   logpath      node['mongodb']['logpath']
   dbpath       node['mongodb']['dbpath']
   enable_rest  node['mongodb']['enable_rest']
+  additional_mongod_options  node['mongodb']['additional_mongod_options']
 end

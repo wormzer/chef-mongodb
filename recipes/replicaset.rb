@@ -28,5 +28,6 @@ if !node.recipe?("mongodb::shard")
     dbpath       node['mongodb']['dbpath']
     replicaset   node
     enable_rest  node['mongodb']['enable_rest']
+    additional_mongod_options  node['mongodb']['additional_mongod_options']
   end
 end
