@@ -20,6 +20,7 @@
 #
 
 package node[:mongodb][:package_name] do
+  version node[:mongodb][:package_version]
   action :install
 end
 
